@@ -15,7 +15,7 @@ function App() {
       <h1 className="center-text">You are a Supper Star!</h1>
       <Container>
         <Row className="justify-content-center">
-          <Col md="4" sm="6" xs="10">
+          <Col md="4" sm="6" xs="10" className="text-center">
           <Search />
           </Col>
         </Row>
@@ -25,4 +25,4 @@ function App() {
     </div>
   );
 }
-export default App; 
+export default App;

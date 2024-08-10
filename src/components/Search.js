@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { RECIPES } from "../app/RECIPES";
-import { Input } from 'reactstrap';
+import RecipeCard from "./RecipeCard";
+import { Input, Container, Row, Col  } from 'reactstrap';
 
 const Search = () => {
   const [searchItem, setSearchItem] = useState('')
-  const [filteredRecipes, setFilteredRecipes] = useState([])
+  const [filteredRecipes, setFilteredRecipes] = useState(RECIPES)
 
   const handleInputChange = (e) => {
     const searchTerm = e.target.value;
@@ -17,9 +18,30 @@ const Search = () => {
     setFilteredRecipes(results);
   }
 
+  //search through the recipes that are listed and reduce list on page
+  return (
+    
+    <div>
+      <input
+        type="text"
+        value={searchItem}
+        onChange={handleInputChange}
+        placeholder="Type here to search"
+      />
+    
+      <div>
+        {filteredRecipes.map((recipe, index) => (
+          <RecipeCard key={index} recipe={recipe} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+  /*
   return (
     <div>
-      <Input
+      <input
         type="text"
         value={searchItem}
         onChange={handleInputChange}
@@ -33,5 +55,7 @@ const Search = () => {
     </div>
   )
 }
-
+*/
 export default Search
+
+//need to figure out how then when clicked on move to the recipe page. Each recipe listed on home page should not include all instuctions just the description. Set up router on each click to move to page. 
