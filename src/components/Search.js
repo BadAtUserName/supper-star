@@ -2,13 +2,15 @@ import { useState } from "react";
 import { RECIPES } from "../app/RECIPES";
 import RecipeCard from "./RecipeCard";
 import { Input, Container, Row, Col  } from 'reactstrap';
+import { Link } from 'react-router-dom'; 
+import RecipeList from "./RecipeList";
 
 const Search = () => {
   const [searchItem, setSearchItem] = useState('')
   const [filteredRecipes, setFilteredRecipes] = useState(RECIPES)
 
   const handleInputChange = (e) => {
-    const searchTerm = e.target.value;
+    const searchTerm = e.target.value.toLowerCase();
     setSearchItem(searchTerm)
 
     //Filter the recipes based on the search term
@@ -28,12 +30,14 @@ const Search = () => {
         onChange={handleInputChange}
         placeholder="Type here to search"
       />
-    
       <div>
         {filteredRecipes.map((recipe, index) => (
-          <RecipeCard key={index} recipe={recipe} />
+          <Link key={index} to={`/recipe/${recipe.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <RecipeCard  recipe={recipe} />
+          </Link>
         ))}
       </div>
+      
     </div>
   )
 }
