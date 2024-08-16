@@ -2,6 +2,8 @@ import cabbageRollImg from './img/14690-cabbage-roll-casserole-DDMFS-4x3-743625f
 import herbButterChicken from './img/Crockpot-Herb-Butter-Chicken-and-Wild-Rice-1-448x448.png'
 import salmonAndLentils from './img/salmon-lentils-mustard-herb-butter-6x4.jpg.webp.png'
 
+export const onlineRecipes = { Recipes : []}
+
 export const RECIPES = [
   {
     id: 0,

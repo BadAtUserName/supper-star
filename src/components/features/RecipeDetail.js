@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { RECIPES } from '../../app/RECIPES';
-import {Card, CardBody, CardTitle, CardText } from 'reactstrap';
+//import {Card, CardBody, CardTitle, CardText } from 'reactstrap';
+import RecipeCard from '../RecipeCard';
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -12,14 +13,9 @@ const RecipeDetail = () => {
   }
 
   return (
-    
-    <Card style={{ width: '66%', margin: '0 auto' }}>
-      <CardBody>
-        <CardTitle tag="h5">{recipe.name}</CardTitle>
-        <CardText>{recipe.description}</CardText>
-      </CardBody>
-
-    </Card>
+    <div style={{ width: '66%', margin: '0 auto' }}>
+      <RecipeCard recipe={recipe} />
+    </div>
   )
 }
 

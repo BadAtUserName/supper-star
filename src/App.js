@@ -4,8 +4,9 @@ import RecipeList from './components/RecipeList';
 import { RECIPES } from './app/RECIPES';
 import { Container, Row, Col } from 'reactstrap';
 import Header from './components/Header';
+import RecipeDirectoryPage from './pages/RecipeDirectoryPage';
 import Search from './components/Search';
-import RecipeDetail from './components/features/RecipeDetail'; 
+import RecipeDetail from './components/features/RecipeDetail';
 //import RecipeDetail from './components/features/RecipeDetail';
 import './App.css';
 
@@ -13,24 +14,25 @@ import './App.css';
 function App() {
   return (
     <Router>
-    <div className="App">
-      <Header /> {/* Use the Header component here */}
-      <h1 className="center-text">Hello!</h1> 
-      <h1 className="center-text">You are a Supper Star!</h1>
-      <Container>
-        <Row className="justify-content-center">
-          <Col md="10" sm="10" xs="10" className="text-center">
-          
-          <Routes>
-      <Route path="/" element={<Search />} />
-      <Route path="/recipe/:id" element={<RecipeDetail />} />
-      </Routes>
-          </Col>
-        </Row>
-      </Container>
-      
+      <div className="App">
+        <Header /> {/* Use the Header component here */}
+        <h1 className="center-text">Hello!</h1>
+        <h1 className="center-text">You are a Supper Star!</h1>
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="10" sm="10" xs="10" className="text-center">
 
-    </div>
+              <Routes>
+                <Route path="/" element={<Search />} />
+                <Route path="/recipes" element={<RecipeDirectoryPage />} />
+                <Route path="/recipe/:id" element={<RecipeDetail />} />
+              </Routes>
+            </Col>
+          </Row>
+        </Container>
+
+
+      </div>
     </Router>
   );
 }

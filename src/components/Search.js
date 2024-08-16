@@ -4,6 +4,7 @@ import RecipeCard from "./RecipeCard";
 import { Input, Container, Row, Col  } from 'reactstrap';
 import { Link } from 'react-router-dom'; 
 import RecipeList from "./RecipeList";
+import RecipeCardMini from "./features/RecipeCardMini";
 
 const Search = () => {
   const [searchItem, setSearchItem] = useState('')
@@ -33,7 +34,7 @@ const Search = () => {
       <div>
         {filteredRecipes.map((recipe, index) => (
           <Link key={index} to={`/recipe/${recipe.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-          <RecipeCard  recipe={recipe} />
+          <RecipeCardMini  recipe={recipe} />
           </Link>
         ))}
       </div>

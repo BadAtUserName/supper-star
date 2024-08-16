@@ -1,5 +1,6 @@
-import { NavbarBrand, Navbar, Nav, NavItem, NavLink } from "reactstrap";
+import { NavbarBrand, Navbar, Nav, NavItem } from "reactstrap";
 import SupperStarLogo from '../app/img/Supper-Star.png'; 
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
