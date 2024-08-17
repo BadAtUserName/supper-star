@@ -27,11 +27,11 @@ const Header = () => {
                         <i className='fa fa-info fa-lg' /> About
                     </NavLink>
                 </NavItem>
-                <NavItem>
+                {/*<NavItem>
                     <NavLink className='nav-link' to='/contact'>
                         <i className='fa fa-address-card fa-lg' /> Contact
                     </NavLink>
-                </NavItem>
+                </NavItem>*/}
             </Nav>
     </Navbar>
 );

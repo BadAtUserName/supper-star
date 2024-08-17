@@ -4,6 +4,7 @@ import { RECIPES } from '../../app/RECIPES';
 //import {Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import RecipeCard from '../RecipeCard';
 import RandomRecipeButton from '../RandomRecipe';
+import LikeButton from './LikeButton';
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -18,9 +19,9 @@ const RecipeDetail = () => {
     <div style={{ width: '66%', margin: '0 auto' }}>
       <RecipeCard recipe={recipe} />
     </div>
-
+    <LikeButton />
     <div>
-      <p>Hmmm Seems Like you might be looking for something else</p>
+      <p>What to Try something else? You know what to do...</p>
       <RandomRecipeButton />
     </div>
     </>

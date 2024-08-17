@@ -7,8 +7,10 @@ import Header from './components/Header';
 import RecipeDirectoryPage from './pages/RecipeDirectoryPage';
 import Search from './components/Search';
 import RecipeDetail from './components/features/RecipeDetail';
+import AboutPage from './pages/AboutPage';
 //import RecipeDetail from './components/features/RecipeDetail';
 import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
                 <Route path="/" element={<Search />} />
                 <Route path="/recipes" element={<RecipeDirectoryPage />} />
                 <Route path="/recipe/:id" element={<RecipeDetail />} />
+                <Route path='about' element={<AboutPage />} />
               </Routes>
             </Col>
           </Row>

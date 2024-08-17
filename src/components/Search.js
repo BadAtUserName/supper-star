@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { RECIPES } from "../app/RECIPES";
-import RecipeCard from "./RecipeCard";
 import { Input, Container, Row, Col  } from 'reactstrap';
 import { Link } from 'react-router-dom'; 
-import RecipeList from "./RecipeList";
 import RecipeCardMini from "./features/RecipeCardMini";
 import RandomRecipeButton from "./RandomRecipe";
+//import RecipeList from "./RecipeList";
+//import RecipeCard from "./RecipeCard";
 
 
 const Search = () => {
-  const [searchItem, setSearchItem] = useState('')
-  const [filteredRecipes, setFilteredRecipes] = useState(RECIPES)
+  const [searchItem, setSearchItem] = useState('') //keeps track of current search
+  const [filteredRecipes, setFilteredRecipes] = useState(RECIPES)//holds list of recipes filtered
 
   //when clicked on move to the recipe page.
   const handleInputChange = (e) => {
@@ -53,46 +53,7 @@ const Search = () => {
   );
 };
 
-  //search through the recipes that are listed and reduce list on page
- /* return (
-    
-    <div>
-      <input
-        type="text"
-        value={searchItem}
-        onChange={handleInputChange}
-        placeholder="Type here to search"
-      />
-      <div>
-        {filteredRecipes.map((recipe, index) => (
-          <Link key={index} to={`/recipe/${recipe.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-          <RecipeCardMini  recipe={recipe} />
-          </Link>
-        ))}
-      </div>
-      
-    </div>
-  )
-} */
-
-  /*
-  return (
-    <div>
-      <input
-        type="text"
-        value={searchItem}
-        onChange={handleInputChange}
-        placeholder="Type here to search" />
-    
-    <ul>
-        {filteredRecipes.map((recipe, index) => (
-          <li key={index}>{recipe.name}</li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-*/
+ 
 export default Search
 
  //Each recipe listed on home page should not include all instuctions just the description. Set up router on each click to move to page. 
