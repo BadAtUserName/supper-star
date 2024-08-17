@@ -10,9 +10,10 @@ const AboutPage = () => {
           <p>
             GOSH! What a long ass day we had a work?<br></br>
             Right?<br></br>
+            I can't even form a sentence correctly it seems.<br></br>
             I'm assuming since you are here that you like cooking even
             if its just been a hell of a day. I bet you are a touch mentally
-            fatigued, I mean who isn't. Well we are here to help. We are a collection of recipes, currently just our own, that you can browse and choose from..Or if that's not for you. We have a fun little roulette button where the computer chooses for you and voila choices made!
+            fatigued, I mean who isn't. Well we are here to help. We are a collection of recipes, currently just our own, that you can browse and choose from...Or if that's not for you. We have a fun little roulette button where the computer chooses for you and voila choices made!
           </p>
         </Col>
 
