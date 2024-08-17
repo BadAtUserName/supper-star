@@ -1,0 +1,14 @@
+.custom-button {
+  background-color: #8f8881!important; /* Custom background color */
+  color: white; /* Text color */
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+  border: none !important; /* Remove default border */
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.5s ease; 
+}
+
+.custom-button:hover {
+  background-color:  #fbd0d0!important; /* Change background color on hover */
+}

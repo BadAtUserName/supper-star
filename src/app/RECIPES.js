@@ -1,6 +1,11 @@
 import cabbageRollImg from './img/14690-cabbage-roll-casserole-DDMFS-4x3-743625f5aa594c6696527ca955023e0e.webp';
 import herbButterChicken from './img/Crockpot-Herb-Butter-Chicken-and-Wild-Rice-1-448x448.png'
 import salmonAndLentils from './img/salmon-lentils-mustard-herb-butter-6x4.jpg.webp.png'
+import LambYogurtSauce from './img/7CBAE8A0-BE5E-4AC5-9444-FC0AD4D8CD95_1_105_c.jpeg'
+import pomodoro from './img/A3297AB2-B403-40A8-AE87-40413CB45A98_1_105_c.jpeg'
+import chickeninRiesling from './img/0BDC9277-E7E6-4BDA-BD72-609F0A1D286D_1_105_c.jpeg'
+import turkeyLasagna from './img/FE5673AD-B562-4A93-9E4E-018FA57C5A9E_1_105_c.jpeg'
+import EasyTeriyakiGlazedSalmon from './img/easyTeriyakiGlazedSalmon.webp'
 
 export const onlineRecipes = { Recipes : []}
 
@@ -126,7 +131,8 @@ export const RECIPES = [
       "Heat oil in a large stainless steel skillet over medium-high heat until shimmering. Add salmon fillets, skin side down. Immediately reduce heat to medium-low. Cook, pressing gently on back of fillets to ensure good contact between the skin and the pan, until skin is rendered and crisp, about 6 minutes.",
       "Flip salmon and cook on second side until a thermometer inserted into the thickest part registers 120°F (49°C) for medium-rare or 130°F (54°C) for medium, about 1 minute longer. Transfer salmon to a paper towel–lined plate to drain.",
       "Divide rice evenly between 4 serving bowls. Top with diced avocado, cucumber, and scallions. Top each with a salmon fillet and spoon sauce on top, using the back of a spoon to evenly glaze each fillet. Sprinkle with furikake and/or sesame seeds. Serve immediately."
-    ]
+    ],
+    image: EasyTeriyakiGlazedSalmon
   },
   {
     id: 4,
@@ -156,7 +162,8 @@ export const RECIPES = [
       "Pour off fat from pot, then cook leeks, shallot, and salt in remaining 2 tablespoons butter, covered, over medium-low heat, stirring occasionally, until leeks are pale golden, 5 to 7 minutes. Add chicken, skin sides up, with any juices from plate, carrots, and wine and boil until liquid is reduced by half, 3 to 4 minutes. Cover pot and braise chicken in oven until cooked through, 20 to 25 minutes.",
       "While chicken braises, peel potatoes, then generously cover with cold water in a saucepan and add salt. Bring to a boil, then simmer until potatoes are just tender, about 15 minutes. Drain, then return to saucepan. Add parsley and shake to coat.",
       "Stir crème fraîche into chicken mixture and season with salt, pepper, and lemon juice, then add potatoes."
-    ]
+    ], 
+    image: chickeninRiesling
   },
   {
     id: 5,
@@ -180,7 +187,8 @@ export const RECIPES = [
       "Stir together yogurt, shallot, salt, and lemon zest in a medium bowl. Measure 1 cup of the mixture into a large ziplock bag. Cover and refrigerate remaining 1/2 cup yogurt mixture until ready to use. Add lamb chops to ziplock bag; seal bag, and turn to coat lamb in sauce. Let marinate in refrigerator at least 2 hours or up to 24 hours.",
       "Preheat grill to high (450°F to 500°F). Scrape off excess marinade from lamb, and discard remaining marinade in bag. Sprinkle chops evenly with salt and pepper to taste. Arrange chops on oiled grill grates; grill, covered, turning once or twice, until browned and a thermometer inserted in thickest portion of meat registers 135°F for medium-rare, about 6 minutes, or to desired degree of doneness. Transfer chops to a platter; let rest 5 minutes.",
       "Transfer reserved yogurt mixture to a food processor. Add fresh herbs and lemon juice; pulse until smooth. Serve chops alongside sauce, cooked couscous, cucumbers, and additional herbs."
-    ]
+    ], 
+    image: LambYogurtSauce
   },
   {
     id: 6,
@@ -212,7 +220,8 @@ export const RECIPES = [
       "Transfer pasta from stock pot into Dutch oven with sauce. Pour in ½ cup reserved pasta cooking liquid. Cook pasta, tossing constantly, until sauce is clinging to each noodle, about 1 minute.",
       "Slowly sprinkle in half of the Parmesan cheese, tossing constantly, until melted into the sauce. Add more pasta water if necessary.",
       "Remove pot from heat and stir in 2 Tbsp. butter until melted. Divide pasta among bowls, then top with remaining cheese and basil leaves."
-    ]
+    ], 
+    image: pomodoro
   },
   {
     id: 7,
@@ -251,7 +260,8 @@ export const RECIPES = [
       "In a medium bowl, combine the ricotta, egg, 2 tablespoons of the parsley, and 1/2 teaspoon salt. Set aside.",
       "Ladle 1/3 of the sauce into a 9 × 12 × 2-inch rectangular baking dish, spreading the sauce over the bottom of the dish. Then add the layers as follows: half the pasta, half the mozzarella, half the ricotta, and one third of the sauce. Add the rest of the noodles, mozzarella, ricotta, and finally, sauce.",
       "Sprinkle with the Parmesan and the remaining 2 tablespoons of parsley. Bake for 30 minutes, until the sauce is bubbling."
-    ]
+    ], 
+    image: turkeyLasagna
   }
   
 ];

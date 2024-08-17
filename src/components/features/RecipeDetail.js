@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { RECIPES } from '../../app/RECIPES';
 //import {Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import RecipeCard from '../RecipeCard';
+import RandomRecipeButton from '../RandomRecipe';
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -13,9 +14,16 @@ const RecipeDetail = () => {
   }
 
   return (
+    <>
     <div style={{ width: '66%', margin: '0 auto' }}>
       <RecipeCard recipe={recipe} />
     </div>
+
+    <div>
+      <p>Hmmm Seems Like you might be looking for something else</p>
+      <RandomRecipeButton />
+    </div>
+    </>
   )
 }
 

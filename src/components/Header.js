@@ -3,6 +3,7 @@ import SupperStarLogo from '../app/img/Supper-Star.png';
 import { NavLink } from "react-router-dom";
 
 
+
 const Header = () => {
   return (
     <Navbar dark color='primary' sticky='top' expand='md'>
@@ -13,7 +14,7 @@ const Header = () => {
             <Nav className='ms-auto' navbar>
                 <NavItem>
                     <NavLink className='nav-link' to='/'>
-                        <i className='fa fa-home fa-lg' /> Home
+                        <i className='fa fa-home fa-lg' /> Home/Search
                     </NavLink>
                 </NavItem>
                 <NavItem>
